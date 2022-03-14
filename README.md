@@ -1,7 +1,4 @@
 
----
-
-
 # <p dir="rtl">
 فيديوهات الدرس</p>
 
@@ -9,7 +6,7 @@
 
 
 * 
-[المراحل](https://www.youtube.com/watch?v=_ubH-N3L9jA&list=PL_gewShnRvv_n0U2MPdkUsMqsX4_KxYHW&index=20)
+[المؤثرات البصرية](https://www.youtube.com/watch?v=H_soQavwCWY&list=PL_gewShnRvv_n0U2MPdkUsMqsX4_KxYHW&index=21)
 
 ---
 
@@ -20,73 +17,36 @@
 
 
 
-* اضافة مكتبة الScene manegment
+* اضف serializedField من نوع gameObject و متغير من نوع bool 
 
     ```
-  using UnityEngine.SceneManagement;
+[SerializeField] GameObject winningFX;
+bool isControlEnabled = true;
 ```
 
 
-* إضافة دالة loadNextScene()
+* قم بإضافة اللازم ب case "Finish  
 
         ```
-void LoadNextScene(){
-	int currentSceneIndex = SceneManager.GetActiveScene ().buildIndex;
-	int nextSceneIndex = currentSceneIndex + 1;
-	if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) {
-	    nextSceneIndex = 0;
-	}
-	SceneManager.LoadScene(nextSceneIndex);
-    }
+ case "Finish":
+    winningFX.SetActive(true);
+    isControlEnabled = false;
 ```
 
 
+* قم بإضافة اللازم ب case "default 
 
-
-
-* 
-اضف دالة **<code>LoadFirstLevel </code></strong>
-
-```
-Void LoadFirstLevel(){
-SceneManager.LoadScene(0);
-}
-```
-
-
-
-* اضف متغير loadingTime
-
-    ```
-int loadingTime = 2;
-```
-
-
-
-
-* 
-قم بتغيير اللازم داخل دالة  onCollisionEnter()
-
-```
-void OnCollisionEnter(Collision collision){
-switch (collision.gameObject.tag) {
-case "Friendly":
-    break;
-case "Finish":
-    Invoke ("LoadNextScene", loadingTime);
-    break;
+        ```
 default:
-    Invoke ("LoadFirstLevel", loadingTime);
-    break;
-}
-}
+isControlEnabled = false;
 ```
+
 
 
 
 ---
 
-<strong>[Github](https://github.com/kuwaitcodes/gamedev-c4-cw)</strong>
+**[Github](https://github.com/kuwaitcodes/gamedev-c4-cw)**
 
 <p dir="rtl">
 <strong>تمرين</strong> </p>
@@ -95,12 +55,15 @@ default:
 
 
 * 
-صمم المراحل ٢ و ٣
+أضف تأثير بصري للفوز - يظهر عندما يصل الاعب إلى منطقة الانتهاء
 
 
 * 
-عند الوصول لنهاية أي مرحلة، يذهب اللاعب إلى المرحلة القادمة
+أضف تأثير بصري للخسارة - يظهر عندما يصطدم اللاعب بالمعوقات
+<p dir="rtl">
+<strong>Bonus</strong></p>
 
 
-* 
-المرحلة تظهر بعد ٣ ثواني من الوصول إلى نقطة الانتهاء 
+<p dir="rtl">
+لنقم بإستخدام متجر Unity Assets Store ونبحث عن صاروخ ونضعه بدل من الشكل الأولي الذي قمنا بصنعه</p>
+
