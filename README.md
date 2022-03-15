@@ -2,10 +2,6 @@
 # <p dir="rtl">
 فيديوهات الدرس</p>
 
-
-
-
-* 
 [المؤثرات البصرية](https://www.youtube.com/watch?v=H_soQavwCWY&list=PL_gewShnRvv_n0U2MPdkUsMqsX4_KxYHW&index=21)
 
 ---
