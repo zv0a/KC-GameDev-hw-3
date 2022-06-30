@@ -1,13 +1,23 @@
+# KC-GameDev-hw-3
 
 # <p dir="rtl">
-فيديوهات الدرس</p>
+<strong>شرح الواجب : </strong>اصنع 2D Player Controller </p>
 
-[المؤثرات البصرية](https://www.youtube.com/watch?v=H_soQavwCWY&list=PL_gewShnRvv_n0U2MPdkUsMqsX4_KxYHW&index=21)
 
----
+<p align="center">
+
+<img src="https://noveltech.dev/img/posts/platformer/character-controller-demo.gif">
+</p>
+</br>
 
 
 # <p dir="rtl">
-شرح الدرس </p>
+- يجب أن يكون اللاعب قادرًا على المشي يسارًا ويمينًا وكذلك القفز
+- تأكد من عدم قدرة اللاعب على القفز وهو في منتصف الهواء
+</p>
+<p dir="rtl">
+بونص 🌟 :
 
-[المشروع](https://docs.google.com/document/d/1RRv_VhoSBWjc2Yd1uTYAt-XugqOgp5N1YcB__AvLxqY/edit)
+
+* أضف Assets والرسوم المتحركة إلى اللاعب الخاص بك
+</p>
